@@ -1,0 +1,4 @@
+{
+  "DisplayTitle": "COMM1085 - College Reading & Writing Skills",
+  "AccentHexCode": "CA293E"
+}
