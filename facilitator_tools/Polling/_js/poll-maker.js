@@ -131,11 +131,11 @@ function buildResultsView() {
 	colors = [];
 	usersFound = [];
 	
-	$('.chart').html('<canvas id="chart" width="400" height="300"></canvas>');
+	$('.chart').html('<canvas id="chart" width="800" height="600"></canvas>');
 	
 	//$("#resultsview").css("display","block");
-	$("#resultsview .polltitle").text(appData.Title);
-	$("#resultsview #polldescription").text(appData.Description);
+	$("#resultsview .polltitle").html(appData.Title);
+	$("#resultsview #polldescription").html(appData.Description);
 	
 	for(l=0; l<appData.Scale.length; l++) {
 		labels.push(appData.Scale[l].Descriptor);	
@@ -190,7 +190,7 @@ function buildResultsView() {
 				animateScale:true,
 			},
 			legend:{
-				position: "right",
+				position: "bottom",
 				onClick:function(event, legendItem) {}
 			}
 		};

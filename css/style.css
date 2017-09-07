@@ -5,11 +5,12 @@
 body {
 	font-family: 'Lato', sans-serif;
 	background: #fafafa;
+	overflow: visible;
 }
 
 h1 {
 	font-family: 'Lato', sans-serif;
-	color: #f8397f;
+	color: #d1004e;
 	font-size: 2.3em;
 	margin-bottom: 20px;
 }
@@ -17,15 +18,15 @@ h1 {
 h2 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: #540431;
-	font-size: 2em;
-	margin-bottom: 10px;
+	color: #d1004e;
+	font-size: 1.8em;
+	margin: 15px 0;
 }
 
 h3 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #7F0632;
+	font-weight: 400;
+	color: #78153d;
 	font-size: 1.75em;
 	margin-bottom: 10px;
 }
@@ -33,7 +34,7 @@ h3 {
 h4 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	color: #7F0632;
+	color: #78153d;
 	font-size: 1.5em;
 	margin-bottom: 10px;
 }
@@ -73,20 +74,25 @@ hr {
 ******************/
 #intro {
 	max-width: 1170px;
-	min-height: 650px;
+	min-height: 850px;
 	background-color: #ffffff;
 }
 .intro {
 	min-height: 400px;
-	margin-top: -500px;
-	margin-left: 30px;
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	/*margin-top: -500px;
+	margin-left: 30px;*/
 }
 #intro img {
 	width: 100vw;
 	height: 100vh;
+	max-height: 800px;
 	object-fit: cover;
 -webkit-clip-path: inset(0 0 0 20%);
-clip-path: inset(0 0 0 20%);}
+clip-path: inset(0 0 0 20%);
+}
 .intro p.heading, .intro h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5em;
@@ -106,75 +112,85 @@ clip-path: inset(0 0 0 20%);}
 	font-size: 1.3em;
 }
 .intro .outcomes {
-	position: inherit;
+	position: relative;
+	bottom: 10px;
 	color: #f1f1f1;
 	padding: 5px;
 	width: 200px;
-	margin: 30px auto;
-	bottom: 10px;
+	height: 30px;
+	margin: 30px auto 15px;
+	text-align: center
 }
+#intro .footer {
+	padding: 7px 10px 0 10px;
+	background: #d1004e;
+	color: white;
+	overflow: visible;
+}
+
+
 /*********************
   Custom Colour Mixins
 **********************/
 .prime-bg {
-  background-color: #2D112B;
+  background-color: #201a30;
 }
 .row .col-xs-12.col-sm-12 .col-xs-12.col-sm-12.col-md-4.prime-bg.intro.z-depth-0 {
 }
 
 .second-bg {
-  background-color: #540431;
+  background-color: #3d163b;
 }
 
 .third-bg {
-  background-color: #7F0632;
+  background-color: #5e1944;
 }
 
 .fourth-bg {
-  background-color: #CA293E;
+  background-color: #78153d;
 }
 .accent-1 {
-  background-color: #FF583D;
+  background-color: #add1e8;
 }
 .accent-2 {
-  background-color: #CB1E5D;
+  background-color: #71ff30;
 }
 .accent-3 {
-  background-color: #A01865;
+  background-color: #d1004e;
 }
 .accent-4 {
-  background-color: #067F0F;
+  background-color: #FF3F91;
 }
-.text-prime-bg {
-  color: #2D112B;
-}
-
-.text-second-bg {
-  color: #540431;
+.text-prime {
+  color: #201a30;
 }
 
-.text-third-bg {
-  color: #7F0632;
+.text-second {
+  color: #3d163b;
 }
 
-.text-fourth-bg {
-  color: #CA293E;
+.text-third {
+  color: #5e1944;
+}
+
+.text-fourth {
+  color: #78153d;
 }
 
 .text-accent-1 {
-  color: #FF583D;
+  color: #add1e8;
 }
 
 .text-accent-2 {
-  color: #CB1E5D;
+  color: #71ff30;
 }
 
 .text-accent-3 {
-  color: #A01865;
+  color: #d1004e;
 }
 
 .text-accent-4 {
-  color: #067F0F;
+  color: #FF3F91;
 }
 
 /*********************
@@ -184,11 +200,22 @@ header {
 	padding: 0;
 	margin: 0;
 }
-header#main01 {
+header#main01, header#h07-02-img, header#h07-03-img, header#h07-04-img {
 	background-image: url(../module_01/images/header1.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 375px;
+}
+header#h07-02-img {
+	background-image: url(../module_07/images/presenting.jpg);
+	background-position: 0 75px;
+}
+header#h07-03-img {
+	background-image: url(../module_07/images/informal_report_poll.jpg);
+}
+header#h07-04-img {
+	background-image: url(../module_07/images/headings.jpg);
+	background-position: 0 -100px;
 }
 .header {
 	padding: 20px 10px 10px 50px;
@@ -196,18 +223,19 @@ header#main01 {
 }
 
 .headerMod {
-	margin-left: -10px;
-	margin-top: -100px;
-	background-color: #263238;
-	height:120px;
+	position: absolute;
+	top: 0;
+		left: 30px;
+	background-color: #ff3f91;
+	height: 40px;
 	width:120px;
 }
 
 .header p {
 	font-family: 'Oswald', sans-serif;
-	color: #f8397f;
 	font-size: 2.75em;
 	padding-left: 50px;
+	margin-top: 20px;
 }
 
 .headericon {
@@ -221,13 +249,15 @@ header#main01 {
     text-align: center;
     background-color: rgb(211, 47, 47);
 }
-
+.view .mask {
+	overflow: auto;
+}
 /*********************
   Content Area Styles
 **********************/
 .content {
 	margin: 30px auto;
-	max-width: 860px;
+	max-width: 960px;
 }
 
 .citation {
@@ -275,7 +305,9 @@ header#main01 {
 .card-wrapper .card-up img {
 	min-width:200px;
 }
-
+.card-block {
+	padding: 10px;
+}
 /*********************
   Input Form Styles
 **********************/
@@ -301,7 +333,7 @@ header#main01 {
 **********************/
 
 #PollOne {
-	margin-top: 350px;
+	margin-top: 150px;
 }
 
  /*********************
@@ -319,7 +351,7 @@ header#main01 {
 footer {
 	padding: 10px 0px 0px 0px;
 	margin-top: 30px;
-	background: #CB1E5D;
+	background: #d1004e;
 	color: white;
 }
 
@@ -327,8 +359,12 @@ footer p {
 	margin-left: 30px;
 }
 .intro-footer {
-	position: relative;
-	top: 0;
+	padding: 10px 0px 0px 0px;
+	margin-top: 30px;
+	background: #d1004e;
+	color: white;
+	margin-top: -30px;
+	z-index: 10;
 }
 
 @media screen and (min-width:376px){

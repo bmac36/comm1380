@@ -1,4 +1,4 @@
 {
-  "DisplayTitle": "COMM1085 - College Reading & Writing Skills",
-  "AccentHexCode": "CA293E"
+  "DisplayTitle": "COMM1380 - Professional Writing Skills for Business",
+  "AccentHexCode": "d1004e"
 }

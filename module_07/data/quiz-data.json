@@ -1,0 +1,141 @@
+{
+  "General": {
+    "QuizName": "My Quiz Activity",
+    "HeadingLevel": 1,
+    "instructions": "none",
+    "feedBackType": "continuous",
+    "forceCorrect": false,
+    "repeatOnComplete": true,
+    "allowNone": false,
+    "allowPrevious": true,
+    "showHints": true,
+    "allowPartial": true,
+    "randomize": true,
+    "subtractWrong": true,
+    "preQuizText": "<p>What value is there to clearn communication in the workplace? Take this quiz to find out.</p> \n <p>For each statement, choose whether the statement is likely or unlikely for you.</p>",
+    "preQuizMedia": "none",
+    "postQuizText": "none",
+    "postQuizMedia": "none"
+  },
+  "Questions": [
+    {
+      "questionType": "Multiple Choice",
+      "maxScoreValue": 1,
+      "questionText": "<p>In my future career, I will be asked to read various kinds of text.</p>",
+      "hintText": "none",
+      "hintMedia": "none",
+      "answers": [
+        {
+          "answerText": "Likely",
+          "feedBack": "You're not alone. Most jobs in today's information economy require us to read a variety of written styles. You may be asked read a patient's medica history, a memo from the company president on policy changes, or an instructional document outlineing expectations and plans for a project you are working on.",
+          "scoreValue": 1
+        },
+        {
+          "answerText": "Unlikely",
+          "feedBack": "<p>Although many jobs rely on primarily on a set of practical skills, most also have a reading component embedded somewhere in the workday.</p> \n <p>Can you imagine being asked to read a patient's medical history, a memo from the company president on policy change, or an instructional document outlining expectations and plans for a project you are working on?</p> \n <p>Even if you are not likely to encounter an academic essay or full-length book in the course of your job, you are likely to call upon your critical reading skills in a variety of situations.</p> \n"
+        }
+      ]
+    },
+    {
+      "questionType": "Multiple Choice",
+      "maxScoreValue": 1,
+      "questionText": "When I am employed in my career of choice, I will be asked to communicate my point of view.",
+      "hintText": "none",
+      "hintMedia": "none",
+      "answers": [
+        {
+          "answerText": "Likely",
+          "feedBack": "Correct!",
+          "scoreValue": 1
+        },
+        {
+          "answerText": "Unlikely",
+          "feedBack": "Incorrect! That isn't Scout's real name."
+        },
+        {
+          "answerText": "Bonnie-Sue Finch",
+          "feedBack": "Incorrect! That isn't Scout's real name."
+        }
+      ]
+    },
+    {
+      "questionType": "Fill In The Blank",
+      "maxScoreValue": 4,
+      "questionText": "To BLANK1 a BLANK2 is probably the most widely read BLANK3 dealing with race in BLANK4.",
+      "hintText": "Known to mimic the songs of other birds.",
+      "hintMedia": [
+        {
+          "type": "image",
+          "src": "http://ih.constantcontact.com/fs077/1101742975031/img/201.jpg",
+          "description": "A mockingbird.",
+          "mediaLink": "http://en.wikipedia.org/wiki/Mockingbird"
+        }
+      ],
+      "answers": [
+        {
+          "answerText": "KILL",
+          "feedBack": "none",
+          "scoreValue": 1
+        },
+        {
+          "answerText": "MOCKINGBIRD",
+          "feedBack": "none",
+          "scoreValue": 1
+        },
+        {
+          "answerText": "BOOK",
+          "scoreValue": 1,
+          "feedBack": "none",
+          "altAnswers": [
+            {
+              "answerText": "NOVEL",
+              "feedBack": "none",
+              "scoreValue": 1
+            },
+            {
+              "answerText": "LITERATURE",
+              "feedBack": "none",
+              "scoreValue": 1
+            },
+            {
+              "answerText": "PIECE OF LITERATURE",
+              "feedBack": "none",
+              "scoreValue": 1
+            }
+          ]
+        },
+        {
+          "answerText": "AMERICA",
+          "feedBack": "none",
+          "scoreValue": 1,
+          "altAnswers": [
+            {
+              "answerText": "THE UNITED STATES",
+              "feedBack": "none",
+              "scoreValue": 1
+            },
+            {
+              "answerText": "THE USA",
+              "feedBack": "none",
+              "scoreValue": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionType": "Math",
+      "maxScoreValue": 1,
+      "questionText": "144 / 12 = BLANK1",
+      "hintText": "none",
+      "hintMedia": "none",
+      "answers": [
+        {
+          "answerText": "12",
+          "feedBack": "none",
+          "scoreValue": 1
+        }
+      ]
+    }
+  ]
+}

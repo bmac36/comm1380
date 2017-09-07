@@ -1,0 +1,52 @@
+{
+  "FieldID": 1000036,
+  "FieldName": "COMM1380-Polls",
+  "PollID": "informal-reports",
+  "Title": "Informal Reports Poll",
+  "Description": "<p>Now that we’ve reviewed the different steps we go through to present information in an informal report, which step do you think is the most important step of the process?</p> \n   <p><strong>Select your answer</strong>, and then take a look at the results. You can change your answer as much as you would like.</p> \n \t<p>Your answers will be recorded anonymously and added to the responses of your classmates. Come back throughout the week to see how the responses grow!</p> \n ",
+  "AccentImage": "none",
+  "GraphType": "pie",
+  "PollType": "Single",
+  "MaxSelections": 1,
+  "Scale": [
+    {
+      "Id": 1,
+      "Container": "ratingscale1",
+      "Color": "#2d112b",
+      "Descriptor": "Step 1: Plan and Outline",
+      "ImageFile": "circle.png"
+    },
+    {
+      "Id": 2,
+      "Container": "ratingscale1",
+      "Color": "#ca293e",
+      "Descriptor": "Step 2: Collect and analyse information",
+      "ImageFile": "circle.png"
+    },
+    {
+      "Container": "ratingscale1",
+      "Id": 3,
+      "Color": "#ff583d",
+      "Descriptor": "Step 3: Revise headings and compose",
+      "ImageFile": "circle.png"
+    },
+    {
+      "Container": "ratingscale1",
+      "Id": 4,
+      "Color": "#a01865",
+      "Descriptor": "Step 4: Conclusion and/or recommendation",
+      "ImageFile": "circle.png"
+    }
+  ],
+  "Roles": {
+    "ModeratorView": [
+      101,
+      102,
+      126
+    ],
+    "ParticipantView": [
+      103
+    ]
+  },
+  "Features": {}
+}
