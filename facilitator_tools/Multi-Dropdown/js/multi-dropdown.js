@@ -63,7 +63,7 @@
 
 		function resetAll() {
 			
-			$("#mi-table").html('<tr><th id="column-question">Scenario</th><th id="column-input">Phase</th><th id="column-feedback">Feedback</th><th id="column-feedbackicon"></th></tr>');
+			$("#mi-table").html('<tr><th id="column-question">Statement</th><th id="column-input">Recommendation or Conclusion?</th><th id="column-feedback">Feedback</th><th id="column-feedbackicon"></th></tr>');
 			initMI(appdata);
 			
 		}

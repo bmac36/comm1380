@@ -200,7 +200,7 @@ header {
 	padding: 0;
 	margin: 0;
 }
-header#main01, header#h07-02-img, header#h07-03-img, header#h07-04-img {
+header#main01, header#h07-02-img, header#h07-03-img, header#h07-04-img, header#practice, header#textEdit {
 	background-image: url(../module_01/images/header1.jpg);
 	background-size: cover;
 	background-position: center;
@@ -216,6 +216,12 @@ header#h07-03-img {
 header#h07-04-img {
 	background-image: url(../module_07/images/headings.jpg);
 	background-position: 0 -100px;
+}
+header#practice {
+	background-image: url(../module_07/images/practice_heading.jpg);
+}
+header#textEdit {
+	background-image: url(../module_07/images/text_edit_heading.jpg);
 }
 .header {
 	padding: 20px 10px 10px 50px;
@@ -278,7 +284,15 @@ header#h07-04-img {
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
-
+/**********************
+  Button styles
+*********************/
+.btn-primary {
+	background-color: #78153d;
+}
+.btn-primary:hover {
+	background-color: #add1e8;
+}
 .caption {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
@@ -365,6 +379,30 @@ footer p {
 	color: white;
 	margin-top: -30px;
 	z-index: 10;
+}
+/***************************
+  Fancy Numbered List
+***************************/
+ol.large-number {
+	list-style: none;
+}
+.large-number {
+	counter-reset: my-badass-counter;
+}
+.large-number li {
+	position: relative;
+	padding-left: 3em;
+	padding-top: .6em;
+}
+.large-number li:before {
+	content: counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 3em;
+	padding-right: 5px;
+	
 }
 
 @media screen and (min-width:376px){

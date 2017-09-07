@@ -1,0 +1,127 @@
+{
+	"ActivityName": "",
+	"ActivityType" : "sort",
+   "HeadingLevel": 1,
+	"FeedbackType" : "continuous",
+	"HighlightEffect" : true,
+	"QuestionColumns" : "1",
+	"Randomize": true,
+	"HorizontalAlignment": true,
+	"PreActivityText" : "Now that you have an understanding of the purpose of different types of headings and the importance of structuring your reports with clear headings, identify which are <span class=\"lead text-fourth\">descriptive</span> headings and which are <span class=\"lead text-fourth\">functional</span> headings.",
+	"PreActivityMedia" : "none",
+	"IncludePostPage" : false,
+	"PostActivityText" : "none",
+	"PostActivityMedia" : "none",
+	"AnswerNodes": [
+		{
+			"key": "func", 
+		 	"title": "Functional", 
+		 	"color": "default",
+		 	"src" : "#d1004e"
+		},
+		{
+			"key": "desc",
+			"title": "Descriptive", 
+			"color": "default",
+			"src" : "#71ff30"
+      }
+	],
+	"QuestionNodes": [
+         {
+         "question" : "Purpose", 
+         "answer" : "func",
+         "type" : "text",
+         "color": "default",
+         "correct" : "Good job!",
+         "wrong" : "Really?"
+      },
+      {
+         "question" : "Equipment Costs", 
+         "answer" : "desc",
+         "type" : "text",
+         "color": "default",
+         "correct" : "Good job!",
+         "wrong" : "Really?"
+      },
+		{
+			"question" : "Background", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An odd number is a number not divisible by 2."
+		},
+		{
+			"question" : "Methodology", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An even number is a number that is divisible by 2."
+		},
+		{
+			"question" : "Personnel Costs", 
+			"answer" : "desc",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An odd number is a number not divisible by 2."	
+		},
+		{
+			"question" : "Survey Results", 
+			"answer" : "desc",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An even number is a number that is divisible by 2."
+		},
+		{
+			"question" : "Findings", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An odd number is a number not divisible by 2."	
+		},
+		{
+			"question" : "Conclusions", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An even number is a number that is divisible by 2."
+		},
+		{
+			"question" : "Recommendations", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An odd number is a number not divisible by 2."	
+		},
+		{
+			"question" : "Year-End Manufacturing", 
+			"answer" : "desc",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An even number is a number that is divisible by 2."
+		},
+		{
+			"question" : "Inventory", 
+			"answer" : "desc",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An odd number is a number not divisible by 2."
+		},
+		{
+			"question" : "Discussion", 
+			"answer" : "func",
+			"type" : "text",
+			"color": "default",
+			"correct" : "Good job!",
+			"wrong" : "An even number is a number that is divisible by 2."
+		}
+	]
+}

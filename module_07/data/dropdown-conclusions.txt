@@ -1,0 +1,105 @@
+{
+  "Randomize": true,
+  "Questions": [
+    {
+      "Text": "Sites A and B are not viable because they are located in the suburbs and lack access to major highways.",
+      "Options": [
+        {
+          "Val": "con",
+          "Text": "Conclusion"
+        },
+        {
+          "Val": "rec",
+          "Text": "Recommendation"
+        }
+      ],
+      "Answer": {
+        "AutoDisplay": false,
+        "FeedbackText": "The correct answer is Conclusion.",
+        "Correct": [
+          "con"
+        ]
+      }
+    },
+    {
+      "Text": "Choose Site C, which offers direct access to major  highways and a growing market in the downtown core.",
+      "Options": [
+        {
+          "Val": "con",
+          "Text": "Conclusion"
+        },
+        {
+          "Val": "rec",
+          "Text": "Recommendation"
+        }
+      ],
+      "Answer": {
+        "AutoDisplay": false,
+        "FeedbackText": "The correct answer is Recommendation.",
+        "Correct": [
+          "rec"
+        ]
+      }
+    },
+    {
+      "Text": "Archway Company should review the current benefits package.",
+      "Options": [
+        {
+          "Val": "con",
+          "Text": "Conclusion"
+        },
+        {
+          "Val": "rec",
+          "Text": "Recommendation"
+        }
+      ],
+      "Answer": {
+        "AutoDisplay": false,
+        "FeedbackText": "The correct answer is Recommendation.",
+        "Correct": [
+          "rec"
+        ]
+      }
+    },
+    {
+      "Text": "Develop an online marketing campaign.",
+      "Options": [
+        {
+          "Val": "con",
+          "Text": "Conclusion"
+        },
+        {
+          "Val": "rec",
+          "Text": "Recommendation"
+        }
+      ],
+      "Answer": {
+        "AutoDisplay": false,
+        "FeedbackText": "The correct answer is Recommendation",
+        "Correct": [
+          "rec"
+        ]
+      }
+    },
+    {
+      "Text": "A two-factor authentication system can be fully implemented by the end of 2011.",
+      "Options": [
+        {
+          "Val": "con",
+          "Text": "Conclusion"
+        },
+        {
+          "Val": "rec",
+          "Text": "Recommendation"
+        }
+      ],
+      "Answer": {
+        "AutoDisplay": false,
+        "FeedbackText": "The correct answer is Conclusion.",
+        "Correct": [
+          "con"
+        ]
+      }
+    }
+  ]
+}

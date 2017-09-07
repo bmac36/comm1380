@@ -17,16 +17,16 @@
 			border-style:solid;
 		}
 		#mi-table #column-question {
-			width:85%;
+			width:75%;
 		}
 		#mi-table #column-input {
 			min-width:90px;
-			max-width:90px;
-			width:90px;
+			max-width:200px;
+			width:200px;
 			
 		}
 		#mi-table #column-feedback, .col-fb {
-			width:15%;
+			width:25%;
 		}
 		#mi-table #column-feedbackicon {
 			width:24px;
@@ -53,3 +53,6 @@
 			background-image:url(../icons/icon-wrong-24.png);
 		}
 	
+#mi-table select {
+	display: block !important;
+}

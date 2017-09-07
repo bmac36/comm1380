@@ -261,13 +261,13 @@ li {
 #MAT_resetButton:focus,
 #MAT_restartButton:focus,
 #MAT_resetWrongButton:focus {
-  background-color: #8F984C;
+  background-color: #d1004e;
   transition: background-color 0.15s linear;
   -moz-transition: background-color 0.15s linear;
   -webkit-transition: background-color 0.15s linear;
   -ms-transition: background-color 0.15s linear;
   color: #FFFFFF;
-  border: 1px solid #8F984C;
+  border: 1px solid #d1004e;
   cursor: pointer; }
 
 #MAT_checkButton:active,
