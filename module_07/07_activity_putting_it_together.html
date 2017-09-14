@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -15,9 +15,12 @@
 <!-- Material Design Bootstrap -->
 <link href="../css/mdb.min.css" rel="stylesheet">
 
-<!-- Your custom styles (optional) -->
-<link href="../facilitator_tools/Polling/_css/polling.css" rel="stylesheet">
+
 <link href="../css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../facilitator_tools/WritingActivity/assets/thirdpartylib/Trumbowyg-master/dist/ui/trumbowyg.css">
+<link rel="stylesheet" href="../facilitator_tools/WritingActivity/assets/css/texteditsave.css">
+
 </head>
 
 <body>
@@ -28,7 +31,7 @@
     <div class="row">
       <div class="col-sm-12 prime-bg header z-depth-1-half">
         <div class="headerMod"></div>
-        <p class="animated fadeIn text-accent-4 c">Introduction to College Reading and Writing</p>
+        <p class="animated flipInX text-accent-4 c">Presenting Information and Social Media</p>
       </div>
     </div>
 </header>
@@ -37,55 +40,100 @@
 <!-- Main Content Area -->
 <main>
     <div class="col-sm-12 content">
-			<h1><i class="fa fa-pencil-square-o fa-2x text-fourth" aria-hidden=""></i><span class="sr-only">Activity: </span>Putting It All Together</h1>
-			<div class="col col-sm-5 float-sm-right" style="margin-bottom: 15px;margin-top: 5px;"> <div class="view hm-orange-strong z-depth-1-half"><img src="images/writing_together.jpg" class="img-fluid " /><div class="view mask"></div></div> </div>
-			<p>We’ve covered how to structure and present information using headings, we’ve learned the difference between functional and descriptive headings, and we know the difference between a conclusion and a recommendation. This task is designed to pull all those pieces together. </p>
-			<div class="col col-sm-7 float-sm-left well z-depth-1-half">
-			<h2>Scenario</h2>
-			<p>You have been asked to pick a restaurant for a year-end dinner celebration for a health care centre and need to organize the information you’ve collected and present it to your coworkers. Your job in this task is to structure it using proper headings so that readers understand the purpose of the report, why you’re writing it, the results of the research, and your conclusion.</p>
-			</div>
-      <div class="clearfix"></div>
-      <div class="news-card z-depth-1-half">
-				<h2 class="text-prime">Instructions</h2>
-				<hr>
-				<ol>
-					<li>Read the text in the box below. It contains no chunking of information or headings</li>
-					<li>Assume the content is in the correct order</li>
-					<li>Break up this report into digestible chunks <br />
-					<ul class="fa-ul checklist">
-						<li><i class="fa-li fa fa-check"></i>Use functional headings at the beginning and end of the report</li>
-						<li><i class="fa-li fa fa-check"></i>Use Descriptive heading for the body of the report</li>
-						</ul></li>
-						<li>Place all headings flush left and indicate whether it is a heading or subheading by using the following font characteristics<br />
-						<ul class="fa-ul checklist">
-							<li><i class="fa-li fa fa-check"></i>1st Level: <strong>Bold</strong></li>
-							<li><i class="fa-li fa fa-check"></i>2nd Level: <strong><em>Bold Italics</em></strong></li>
-							<li><i class="fa-li fa fa-check"></i>3rd Level: <em>Italics</em></li>
-							</ul></li>
-					<li>Choose a heading from the following list and add it to the report as either a heading or subheading in the appropriate location. <strong>You can use some headings more than once.</strong><br />
-					<ul class="fa-ul checklist">
-						<li><i class="fa-li fa fa-check"></i>Background</li>
-						<li><i class="fa-li fa fa-check"></i>Conclusions</li>
-						<li><i class="fa-li fa fa-check"></i>Introduction</li>
-						<li><i class="fa-li fa fa-check"></i>Option 1: Copper Kettle Restaurant</li>
-						<li><i class="fa-li fa fa-check"></i>Option 2: Michi Japanese Restaurant and Sushi Bar</li>
-						<li><i class="fa-li fa fa-check"></i>Option 3: Memories Fine Dining</li>
-						<li><i class="fa-li fa fa-check"></i>Location</li>
-						<li><i class="fa-li fa fa-check"></i>Methods</li>
-						<li><i class="fa-li fa fa-check"></i>Menu </li>
-						<li><i class="fa-li fa fa-check"></i>Prices</li>
-						<li><i class="fa-li fa fa-check"></i>Purpose</li>
-						<li><i class="fa-li fa fa-check"></i>Ratings and Review</li>
-						<li><i class="fa-li fa fa-check"></i>Restaurant Options</li>
-						<li>Rooms Available</li>
-						</ul></li>
-					<li>Once you have finished editing the text to include headings, click Save.</li>
-				</ol>
+		<h1 class="animated bounceInLeft"><i class="fa fa-pencil-square-o fa-2x text-fourth" aria-hidden=""></i><span class="sr-only">Activity: </span>Putting It All Together</h1>
 
+		<p>We’ve covered how to structure and present information using headings, we’ve learned the difference between functional and descriptive headings, and we know the difference between a conclusion and a recommendation. This task is designed to pull all those pieces together. </p>
+
+		<h2>Scenario</h2>
+		<p>You have been asked to pick a restaurant for a year-end dinner celebration for a health care centre and need to organize the information you’ve collected and present it to your coworkers. Your job in this task is to structure it using proper headings so that readers understand the purpose of the report, why you’re writing it, the results of the research, and your conclusion.</p>
+
+		<div class="clearfix"></div>
+      <a id="showInstructions">
+  <h3 class="mt-4 text-underline">Expand to see the Instructions</h3>
+  </a>
+  <div class="news-card z-depth-1-half" id="instructions" style="display: none;">
+    <h2 class="text-prime">Instructions</h2>
+    <hr>
+    <ol>
+      <li>Read the text in the box below. It contains no chunking of information or headings</li>
+      <li>Assume the content is in the correct order</li>
+      <li>Break up this report into digestible chunks <br />
+        <ul class="fa-ul checklist">
+          <li><i class="fa-li fa fa-check"></i>Use functional headings at the beginning and end of the report</li>
+          <li><i class="fa-li fa fa-check"></i>Use Descriptive headings for the body of the report</li>
+        </ul>
+      </li>
+      <li>Place all headings flush left and indicate whether it is a heading or subheading by using the following font characteristics<br />
+        <ul class="fa-ul checklist">
+          <li><i class="fa-li fa fa-check"></i>1st Level: <strong>Header 1</strong></li>
+          <li><i class="fa-li fa fa-check"></i>2nd Level: <strong>Header 2</strong></li>
+          <li><i class="fa-li fa fa-check"></i>3rd Level: <strong>Header 3</strong></li>
+        </ul>
+      </li>
+      <li>Choose a heading from the following list and add it to the report as either a heading or subheading in the appropriate location. <strong>You can use some headings more than once.</strong><br />
+        <ul class="fa-ul checklist">
+          <li><i class="fa-li fa fa-check"></i>Background</li>
+          <li><i class="fa-li fa fa-check"></i>Conclusions</li>
+          <li><i class="fa-li fa fa-check"></i>Introduction</li>
+          <li><i class="fa-li fa fa-check"></i>Option 1: Copper Kettle Restaurant</li>
+          <li><i class="fa-li fa fa-check"></i>Option 2: Michi Japanese Restaurant and Sushi Bar</li>
+          <li><i class="fa-li fa fa-check"></i>Option 3: Memories Fine Dining</li>
+          <li><i class="fa-li fa fa-check"></i>Location</li>
+          <li><i class="fa-li fa fa-check"></i>Methods</li>
+          <li><i class="fa-li fa fa-check"></i>Menu </li>
+          <li><i class="fa-li fa fa-check"></i>Prices</li>
+          <li><i class="fa-li fa fa-check"></i>Purpose</li>
+          <li><i class="fa-li fa fa-check"></i>Ratings and Review</li>
+          <li><i class="fa-li fa fa-check"></i>Restaurant Options</li>
+          <li><i class="fa-li fa fa-check"></i>Rooms Available</li>
+        </ul>
+      </li>
+      <li>Once you have finished editing the text to include headings, click <strong>Save</strong>.</li>
+    </ol>
+    <button class="btn btn-primary pull-right" id="hideInstructions">Hide</button>
+    <div class="clearfix"></div>
+           </div> 
+        <button id="btn-review-orig" class="btn btn-default" onClick="reviewOriginal()">Review Original</button>   
+		<button id="btn-save-draft" class="btn btn-success" onClick="saveDraft()">Save Draft</button>            
+		<button id="btn-save-publish" class="btn btn-primary" onClick="savePublish()">Publish Response</button>   
+		<button id="btn-review-answer" class="btn btn-info" onClick="reviewAnswer()" disabled="disabled">Review Answer</button>  
+        
+        
+        <div class="row">
+        	<div class="col-sm-6">
+				<div id="update-info">
+					<p><span id="ui-status">Saved</span> on <span id="ui-date"></span></p>
+				</div>
+        	</div>
+        	<div class="col-sm-6">
+				<div id="update-wordcount">
+					Words: <span id="wordCount">0</span><br/>
+				</div>	
+        	</div>
+        </div>
+
+      	<div id="editorload" style="display:none"></div>
+		<div id="editor"></div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="writingModal" tabindex="-1" role="dialog" aria-labelledby="writingModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="writingModalLabel">Modal title</h4>
+			  </div>
+			  <div class="modal-body">
+				...
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
 			</div>
-     </div>
-     <div class="col-sm-12 content">
-	</div>    
+		  </div>
+		</div>      
+
+      
+    </div>
 </main>
 <!-- /Main Content Area -->
 <footer>
@@ -107,24 +155,35 @@
 <!-- Bootstrap core JavaScript --> 
 <script type="text/javascript" src="../js/bootstrap.js"></script> 
 
-<!-- MDB core JavaScript --> 
-<script type="text/javascript" src="../js/mdb.min.js"></script> 
+<!-- MDB core JavaScript 
+<script type="text/javascript" src="../js/mdb.min.js"></script> --> 
 
 <!-- Open-Close Collapse --> 
 <script src="../js/plugins/open_close_all.js"></script> 
 
 <!-- OLC Custom JS --> 
-<script src="../js/plugins/olc-custom.js"></script> 
+<script src="../js/plugins/olc-custom.js"></script>
+	
+<script src="../facilitator_tools/WritingActivity/assets/thirdpartylib/Trumbowyg-master/dist/trumbowyg.js"></script>
 
-<!-- Polling --> 
-
-<!-- Chart JS --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script> 
 <script>
-    var datafilename = "poll-personality.json";  
-  </script> 
-<script src="../facilitator_tools/Polling/_js/thirdpartylib/global-superagent-d2l-session-auth.js"></script> 
-<script src="../facilitator_tools/Polling/_js/thirdpartylib/csval-lib.js"></script> 
-<script src="../facilitator_tools/Polling/_js/poll-maker.js"></script>
+	var htmlfilename = "07_activity_putting_it_together_instructor.html";
+	var answerfilename = "07_activity_putting_it_together_answer.html";
+</script>
+<script src="../facilitator_tools/WritingActivity/assets/thirdpartylib/valence/global-superagent-d2l-session-auth.min.js"></script>
+<script src="../facilitator_tools/WritingActivity/assets/thirdpartylib/valence/csval-lib.js"></script>
+<script src="../facilitator_tools/WritingActivity/assets/js/texteditsave.js"></script>
+<script>
+$(document).ready(function(){
+    $("#showInstructions").click(function(){
+        $("div#instructions").show();
+    });
+		
+    $("#hideInstructions").click(function(){
+        $("div#instructions").hide();
+    });
+});
+</script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* YOUR CUSTOM STYLES */
 
-@import url('https://fonts.googleapis.com/css?family=Oswald|Droid+Sans|Lato:300,400,400i,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400|Droid+Sans|Lato:300,400,400i,700,700i,900');
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -25,29 +25,37 @@ h2 {
 
 h3 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	color: #78153d;
-	font-size: 1.75em;
+	font-size: 1.4em;
 	margin-bottom: 10px;
 }
 
 h4 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	color: #78153d;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	margin-bottom: 10px;
 }
 
 h5 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 1.25em;
+	font-size: 1em;
+	font-style: italic;
 	margin-bottom: 10px;
 }
 
 a {
+	color: #78153d;
 	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #d1004e;
+}
+a:visited {
+	color: #5e1944;
 }
 hr {
 	border-width: 2px;
@@ -56,7 +64,21 @@ hr {
 ol {
 	font-weight: 400;
 }
+ul.alpha {
+	list-style: lower-alpha;
+}
+ul.roman {
+	list-style: lower-roman;
+}
+.text-bold {
+	font-weight: 700;
+}
+.bold_em {
+	font-weight: 700;
+	font-style: italic;
+}
 .container-fluid {
+	background-color: #ffffff;
 	padding: 0;
 	overflow: hidden;
 }
@@ -71,22 +93,55 @@ ol {
 .btn {
   text-decoration: none;
 }
+/*******************
+  html5 tag stylings
+*******************/
+aside {
+	background-color: #f1f1f1;
+	float: right;
+	width: 30%;
+	border-top: 40px solid #d1004e;
+	border-bottom: 15px solid #d1004e;
+	margin-left: 20px;
+	clear: both;
+	padding: 10px;
+}
+section .social {
+	width: 70%;
+	float: left;
+}
 
 /******************
    Intro Page styles
 ******************/
-#intro {
+#intro, #summary {
 	max-width: 1170px;
 	min-height: 850px;
 	background-color: #ffffff;
 }
-.intro {
+.intro, .summary-title {
 	min-height: 400px;
 	position: absolute;
 	top: 200px;
 	left: 50px;
 	/*margin-top: -500px;
 	margin-left: 30px;*/
+}
+.summary-title {
+	left: 0;
+	top: 350px;
+	height: 300px;
+	min-height: 300px;
+	opacity: .8;
+	padding: 45px;
+}
+.summary {
+	min-height: 800px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 700px;
+	opacity: .85;
 }
 #intro img {
 	width: 100vw;
@@ -96,7 +151,7 @@ ol {
 -webkit-clip-path: inset(0 0 0 20%);
 clip-path: inset(0 0 0 20%);
 }
-.intro p.heading, .intro h1 {
+.intro p.heading, .intro h1, .summary-title p.heading, .summary h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5em;
 	line-height: 1.2em;
@@ -105,14 +160,29 @@ clip-path: inset(0 0 0 20%);
 	padding: 10px 5px 0 0;
 	margin-bottom: 10px;
 }
-.intro p {
+.summary-title p.heading, .summary h1 {
+	text-align: left;
+	font-weight: 300;
+	font-size: 2em;
+	margin-top: 20px;	
+}
+.intro p, .summary p {
 	color: #f1f1f1;
 	font-size: 1em;
 	line-height: 1.3em;
 }
-.intro h1 {
+.summary p {
+	color: #282828;
+}
+.intro h1, .summary-title h1 {
 	margin-top: -30px;
 	font-size: 1.3em;
+}
+.summary h1 {
+	color: #d1004e;
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	font-weight: 400;
 }
 .intro .outcomes {
 	position: relative;
@@ -124,7 +194,7 @@ clip-path: inset(0 0 0 20%);
 	margin: 30px auto 15px;
 	text-align: center
 }
-#intro .footer {
+#intro .footer, #summary .footer {
 	padding: 7px 10px 0 10px;
 	background: #d1004e;
 	color: white;
@@ -156,7 +226,7 @@ clip-path: inset(0 0 0 20%);
   background-color: #add1e8;
 }
 .accent-2 {
-  background-color: #71ff30;
+  background-color: #6BCF65;
 }
 .accent-3 {
   background-color: #d1004e;
@@ -185,7 +255,7 @@ clip-path: inset(0 0 0 20%);
 }
 
 .text-accent-2 {
-  color: #71ff30;
+  color: #6BCF65;
 }
 
 .text-accent-3 {
@@ -203,7 +273,7 @@ header {
 	padding: 0;
 	margin: 0;
 }
-header#main01, header#h07-02-img, header#h07-03-img, header#h07-04-img, header#practice, header#textEdit {
+header#main01, header#h07-02-img, header#polling, header#h07-04-img, header#practice, header#textEdit, header#h07-09-img, header#caseStudy, header#reading {
 	background-image: url(../module_01/images/header1.jpg);
 	background-size: cover;
 	background-position: center;
@@ -213,18 +283,29 @@ header#h07-02-img {
 	background-image: url(../module_07/images/presenting.jpg);
 	background-position: 0 75px;
 }
-header#h07-03-img {
-	background-image: url(../module_07/images/informal_report_poll.jpg);
+header#polling {
+	background-image: url(../img/heading_images/poll_heading.jpg);
+	background-position: 0 -300px;;
 }
 header#h07-04-img {
 	background-image: url(../module_07/images/headings.jpg);
 	background-position: 0 -100px;
 }
 header#practice {
-	background-image: url(../module_07/images/practice_heading.jpg);
+	background-image: url(../img/heading_images/practice_heading.jpg);
 }
 header#textEdit {
-	background-image: url(../module_07/images/text_edit_heading.jpg);
+	background-image: url(../img/heading_images/text_edit_heading.jpg);
+}
+header#h07-09-img {
+	background-image: url(../module_07/images/social_media.jpg);
+}
+header#caseStudy {
+	background-image: url(../img/heading_images/cs_heading.jpg);
+}
+header#reading {
+	background-image: url(../img/heading_images/reading_heading.jpg);
+	background-position: bottom;
 }
 .header {
 	padding: 20px 10px 10px 50px;
@@ -296,6 +377,9 @@ header#textEdit {
 .btn-primary:hover {
 	background-color: #add1e8;
 }
+.text-underline {
+	text-decoration: underline;
+}
 .caption {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
@@ -321,9 +405,19 @@ header#textEdit {
 }
 .card-wrapper .card-up img {
 	min-width:200px;
+	padding: 15px;
+}
+.card-block h4 {
+	font-weight: 400;
+	text-transform: uppercase;
 }
 .card-block {
 	padding: 10px;
+}
+div.face.back a.rotate-btn {
+	position: absolute;
+	bottom: 30px;
+	left: 65px;
 }
 /*********************
   Input Form Styles
@@ -369,6 +463,9 @@ header#textEdit {
 	background-color: #add1e8;
 	margin: 15px 0;
 }
+.well {
+	padding: 10px;
+}
 /*********************
   Footer CSS
 **********************/
@@ -382,7 +479,7 @@ footer {
 footer p {
 	margin-left: 30px;
 }
-.intro-footer {
+.intro-footer  {
 	padding: 10px 0px 0px 0px;
 	background: #d1004e;
 	color: white;
@@ -391,18 +488,21 @@ footer p {
 /***************************
   Fancy Numbered List
 ***************************/
-ol.large-number {
+ol.large-number, ol.large-number-nolead {
 	list-style: none;
 }
-.large-number {
+.large-number, .large-number-nolead {
 	counter-reset: my-badass-counter;
 }
-.large-number li {
+.large-number li, .large-number-nolead li {
 	position: relative;
 	padding-left: 3em;
 	padding-top: .6em;
 }
-.large-number li:before {
+.large-number-nolead li {
+	padding-top: 1em;
+}
+.large-number li:before, .large-number-nolead li:before {
 	content: counter(my-badass-counter);
 	counter-increment: my-badass-counter;
 	position: absolute;
@@ -411,8 +511,36 @@ ol.large-number {
 	font-size: 3em;
 	padding-right: 5px;
 }
+/****************************
+  Text Input Activity Styles
+****************************/
+.feedback {
+	border: 1px #d1004e solid;
+	font-size: 1.1em;
+	color: #78153d;
+	padding: 5px;
+	margin-bottom: 15px;
+}
 
-
+.call-to-action {
+	margin-top: 25px;
+	padding: 15px;
+}
+/**************************
+  styles for interactives
+**************************/
+#workplace_interactive {
+	width: 100%;
+	min-height: 500px;
+	height: 400px;
+}
+/*************************
+  Miscellaneous styles
+*************************/
+.address {
+	min-width: 150px;
+	width: 150px
+}
 @media screen and (min-width:376px){
 .intro {
 	padding-right: 40px;
